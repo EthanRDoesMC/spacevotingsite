@@ -1636,7 +1636,9 @@ input, select, textarea {
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
-				border: 0;
+				border: 1px;
+                border-style: solid;
+                border-color: #ffffff;
 				height: 100%;
 				left: 0;
 				position: absolute;
