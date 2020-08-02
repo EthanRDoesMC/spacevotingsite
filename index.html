@@ -36,11 +36,9 @@
                             <div style="display: none; background: rgba(0, 0, 0, 0);" id="setup1" class="lazyload">
                             <h2>dark space vibez</h2>
 							<h3>sunrisee#6937</h3>
-                            <!--<div id="lazyload">-->
                                 <!--
                             <blockquote class="imgur-embed-pub" lang="en" data-id="a/PjPNHTZ"><a href="//imgur.com/a/PjPNHTZ">r/jailbreak setup battle ?</a></blockquote>
                                 -->
-                                <!--</div>-->
                             <p></p>
                             <a data-fancybox data-type="iframe" href="http://ethanrdoesmc.com"><button class="primary">Vote</button></a>
                             <p></p>
@@ -385,6 +383,15 @@
 			</div>
 
 		<!-- Scripts -->
+        <script>
+            function load(img)
+            {
+                img.fadeOut(0, function() {
+                    img.fadeIn(1000);
+                });
+            }
+        $('.lazyload').lazyload({load: load});
+            </script>
 			<script src="assets/js/jquery.min.js"></script>
 <!--			<script src="assets/js/jquery.poptrox.min.js"></script>-->
 			<script src="assets/js/browser.min.js"></script>
