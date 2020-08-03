@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 (function($) {
 
 	var	$window = $(window),
@@ -279,28 +280,3 @@
 //				});
 
 })(jQuery);
-
-console.clear();
-
-var videoAttr = { 'autoplay': true, 'loop': true, 'mute': true, 'playsinline': true };
-var imgMP4s = Array.prototype.map.call(
-  document.querySelectorAll('img[src*=".mp4"]'),
-  function(img){
-
-    var src = img.src;
-    img.src = null;
-
-    img.addEventListener('error', function(e){
-      console.log('MP4 in image not supported. Replacing with video', e);
-      function argsToArray(args) {
-  var r = []; for (var i = 0; i < args.length; i++)
-    r.push(args[i]);
-  return r;
-}
-argsToArray(document.getElementsByTagName('img')).forEach(function(img) {
-  img.src = img.src.split('.mp4').join('.jpg');
-});
-    });
-
-    img.src = src;
-  });
