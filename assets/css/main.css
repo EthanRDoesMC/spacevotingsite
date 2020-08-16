@@ -2073,3 +2073,7 @@ input, select, textarea {
         backdrop-filter: blur(10px);
     }
 }
+
+.votebutton {
+    display: none;
+}
